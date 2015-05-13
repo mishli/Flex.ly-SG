@@ -1,35 +1,18 @@
-[![Build Status](https://travis-ci.org/fbrctr/fabricator.svg)](https://travis-ci.org/fbrctr/fabricator) [![devDependency Status](https://david-dm.org/fbrctr/fabricator/dev-status.svg)](https://david-dm.org/fbrctr/fabricator#info=devDependencies) [![Join the chat at https://gitter.im/fbrctr/fabricator](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/fbrctr/fabricator?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+<img src="https://pbs.twimg.com/profile_images/592658731902619649/snUarl3b_400x400.png" width="200" alt="Flex.ly">
 
-<p align="center">
-  <img src="http://fbrctr.github.io/assets/toolkit/images/logo.svg" width="500">
-</p>
+# Flex.ly Style Gudie, built on Fabricator using Bourbon
 
-# Fabricator
+## View Project
 
-> _fabricate_ - to make by assembling parts or sections.
-
-Fabricator is a tool for building website UI toolkits - _think ["Tiny Bootstraps, for Every Client"](http://daverupert.com/2013/04/responsive-deliverables/#tiny-bootstraps-for-every-client)_
-
-## Quick Start
-
-```shell
-$ curl -L https://github.com/resource/fabricator/archive/master.tar.gz | tar zx --strip 1
-$ npm start
-```
-
-## Documentation
-
-#### [Read the docs →](http://fbrctr.github.io/docs)
-
-## Demo
-
-#### [Default Fabricator Instance →](http://fbrctr.github.io/demo)
+#### [Default Fabricator Instance →](http://front.flex.ly)
 
 ## Credits
 
-Created by [Luke Askew](http://twitter.com/lukeaskew).
+Created by [Doron Mishli](http://twitter.com/mish_li).
 
-Logo by [Abby Putinski](https://abbyputinski.com/)
+Built on [Fabricator](http://fbrctr.github.io/).
+
+Using [Bourbon](http://bourbon.io/)
 
 ## License
 
