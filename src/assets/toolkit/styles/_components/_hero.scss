@@ -1,0 +1,71 @@
+/**
+  * @name Hero
+  *
+*/
+
+.hero {
+
+    @include outer-container;
+    background: $color-main;
+    height: 484px;
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+    @include respond-max(440px) {
+        height: 320px;
+    }
+
+    section {
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 24px;
+        }
+
+        @include span-columns(6);
+        @include shift(1);
+        @include vertical-align;
+
+        @include respond-max(960px) {
+            @include span-columns(8);
+        }
+
+        @include respond-max(728px) {
+            @include fill-parent();
+            @include shift(0);
+            text-align: center;
+            padding: 0px 25px;
+        }
+
+        @include respond-max(640px) {
+            @include fill-parent();
+            @include shift(0);
+
+            h1 {
+                font-size: 32px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        @include respond-max(440px) {
+            @include fill-parent();
+            @include shift(0);
+
+            h1 {
+                font-size: 24px;
+            }
+
+        }
+    }
+
+
+
+}

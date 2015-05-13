@@ -1,0 +1,51 @@
+/* ===== Media Quieries Mixins ===== */
+
+// taken from https://github.com/jakearchibald/sass-ie/
+// ==========================================================================
+
+$fix-mqs: false !default;
+
+@mixin respond-min($width) {
+    @if $fix-mqs {
+        @if $fix-mqs >= $width {
+            @content;
+        }
+    }
+    @else {
+        @media screen and (min-width: $width) {
+            @content;
+        }
+    }
+}
+@mixin respond-max($width) {
+    @if $fix-mqs {
+        @if $fix-mqs <= $width {
+            @content;
+        }
+    }
+    @else {
+        @media screen and (max-width: $width) {
+            @content;
+        }
+    }
+}
+
+$old-ie: false !default;
+
+@mixin old-ie {
+    @if $old-ie {
+        @content;
+    }
+}
+
+@mixin respond-min-max($w1, $w2)
+{
+    @if ($fix-media-queries) {
+        // nothing?
+    }
+    @else {
+        @media screen and (min-width: em($w1)) and (max-width: em($w2)) {
+            @content;
+        }
+    }
+}

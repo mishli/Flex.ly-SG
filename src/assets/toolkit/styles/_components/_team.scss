@@ -1,0 +1,57 @@
+/**
+  * @name Hero
+  *
+*/
+
+.team {
+    @include outer-container;
+    background: $color-main;
+    padding: 40px 20px;
+
+    div {
+
+        @include span-columns(3);
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 0px 20px;
+
+        &:nth-child(4n+4) {
+            @include omega();
+        }
+
+        img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            background: $color-main-darker;
+            outline: none;
+            border: none;
+        }
+
+        h2 {
+            margin: 15px 0px 15px 0px;
+        }
+
+         @include respond-max(960px) {
+            @include span-columns(4);
+
+            &:nth-child(3n+3) {
+                @include omega();
+            }
+        }
+
+        @include respond-max(728px) {
+            @include span-columns(6);
+
+            &:nth-child(2n+2) {
+                @include omega();
+            }
+        }
+
+        @include respond-max(500px) {
+            @include fill-parent();
+            margin-bottom: 40px;
+        }
+    }
+
+}

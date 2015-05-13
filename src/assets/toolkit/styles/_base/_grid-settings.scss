@@ -1,0 +1,24 @@
+@import "bourbon/neat-helpers";
+
+// Change the grid settings
+$column: 80px;
+$gutter: 20px;
+$grid-columns: 12;
+$max-width: 100%;
+
+// Define your breakpoints
+
+// Breakpoints used throughout the website
+$breakpoint--tiny    : 380;
+$breakpoint--palm    : 480;
+$breakpoint--mobile  : 640;
+$breakpoint--tablet  : 767;
+$breakpoint--desktop : 991;
+$breakpoint--cinema  : 1199;
+$breakpoint--1440    : 1440;
+
+
+$tablet: new-breakpoint(max-width 768px 8);
+$mobile: new-breakpoint(max-width 480px 4);
+
+

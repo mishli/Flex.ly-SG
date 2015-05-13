@@ -1,0 +1,69 @@
+/* _____ VARIABLES _____ */
+
+// Generic
+// ==========================================================================
+
+$default-borderRadius: 4;
+
+
+// Colors
+// ==========================================================================
+
+$color-default-light:       #fff;
+$color-default-dark:        #333;
+$color-default-darker:      #000;
+
+$color-main:                #dddddd;
+$color-main-light:          lighten($color-main , 20);
+$color-main-lighter:        lighten($color-main , 40);
+$color-main-darker:        darken($color-main , 5);
+
+$color-secondary:           #ee746f;
+
+$color-alt:                 #f1ede4;
+$color-alt-dark:            #c2c0bc;
+$color-alt-light:           #f8f5ec;
+
+$color-alt2:                #637c84;
+
+$color-white:               #fff;
+$color-text:                #333;
+$color-text--light:         lighten($color-text , 20);
+$color-text--dark:          darken($color-text , 20);
+$color-text--link:          $color-text;
+$color-text--link--hover:   darken($color-text--link, 20);
+
+
+// Font usage for normal, display, script, and monospace stacks
+$font-slab       : "Roboto Slab" , "Helvetica Neue", Helvetica, serif, sans-serif;
+$font-sans       : "Helvetica Neue", Helvetica, serif, sans-serif;
+$font-serif      : serif, sans-serif;
+
+
+
+// Type Settings
+// ==========================================================================
+
+// Units for consistent spacing, vertical rhythm, and a typographic baseline
+$unit            : 7;
+$unit--gutter    : $unit * 4;
+$unit--baseline  : $unit * 4;
+
+//base font
+$bf: 16;
+
+//Typography
+$unit-p         : 18;
+$unit-p--medium : 22;
+$unit-p--large  : 24;
+$unit-p--small  : 15;
+$unit-h1: 38;
+$unit-h2: 30;
+$unit-h3: 24;
+$unit-h4: $unit-p;
+$unit-h5: $unit-p;
+$unit-h6: $unit-p;
+
+
+
+

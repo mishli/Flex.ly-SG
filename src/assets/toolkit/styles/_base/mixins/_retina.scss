@@ -1,0 +1,35 @@
+/* ===== Retina Mixins ===== */
+
+@mixin background-image-retina($file, $type, $width, $height) {
+  background-image: url($file + '.' + $type);
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (-moz-min-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx){
+    & {
+      background-image: url($file + '@2x.' + $type);
+      -webkit-background-size: $width $height;
+      -moz-background-size: $width $height;
+      -o-background-size: $width $height;
+      background-size: $width $height;
+      // width: $width;
+      // height: $height;
+    }
+  }
+}
+
+// 1.3 ratio because devices like Nexus 7, might as well give them @2x assets too
+@mixin image-2x($image, $width: auto, $height: $width) {
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+         only screen and (-o-min-device-pixel-ratio: 13/10),
+         only screen and (min-resolution: 120dpi) {
+    background-image: url($image);
+    @if $width != auto {
+      // bg-size() is a mixin I use for properly prefixing background-size
+      // for webkit, moz, o, ms
+      @include bg-size($width, $height);
+    }
+  }
+}

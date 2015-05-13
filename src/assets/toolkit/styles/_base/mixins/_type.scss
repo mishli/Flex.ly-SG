@@ -1,0 +1,22 @@
+/* ===== Type Mixins ===== */
+
+// em calc
+// ==========================================================================
+@function em($px, $base: 16) {
+    @return ($px / $base) + em;
+}
+
+
+// Font size calc
+// new hotness from @inuitcss
+// ==========================================================================
+
+@mixin font-size($font-size, $line-height: true) {
+    font-size: em($font-size);
+    @if $line-height == true {
+        line-height: ceil($font-size / $unit--baseline) * ($unit--baseline / $font-size) + em;
+    }
+    @else {
+        line-height: em($line-height, $font-size);
+    }
+}
