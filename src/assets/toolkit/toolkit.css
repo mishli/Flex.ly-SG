@@ -444,6 +444,12 @@ th {
   padding: 0;
 }
 
+/* line 1, styles/_base/_base.scss */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 /* line 4, styles/_base/bourbon/grid/_box-sizing.scss */
 html {
   box-sizing: border-box;
@@ -727,6 +733,55 @@ cite {
   }
 }
 
+/**
+  * @name Hero
+  *
+*/
+/* line 6, styles/_components/_content.scss */
+.content {
+  *zoom: 1;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: #dddddd;
+  padding: 40px 40px;
+}
+/* line 49, styles/_base/mixins/_basic.scss */
+.content:before, .content:after {
+  content: "";
+  display: table;
+}
+/* line 54, styles/_base/mixins/_basic.scss */
+.content:after {
+  clear: both;
+}
+/* line 11, styles/_components/_content.scss */
+.content h1 {
+  line-height: 133%;
+}
+/* line 15, styles/_components/_content.scss */
+.content h2 {
+  margin: 0px 0px 10px 0px;
+}
+/* line 19, styles/_components/_content.scss */
+.content p {
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 640px) {
+  /* line 25, styles/_components/_content.scss */
+  .content h1 {
+    font-size: 26px;
+  }
+  /* line 29, styles/_components/_content.scss */
+  .content h2 {
+    font-size: 20px;
+  }
+  /* line 33, styles/_components/_content.scss */
+  .content p {
+    font-size: 16px;
+  }
+}
+
 /*! SPECIFICS */
 /*! PROJRCT */
 /* ===== Project ===== */
@@ -746,7 +801,7 @@ a {
 /* line 18, styles/_project/_typography.scss */
 .h1, h1 {
   font-family: "Helvetica Neue", Helvetica, serif, sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 42px;
   line-height: 122%;
   color: #333;
@@ -771,7 +826,7 @@ a {
 
 /* line 41, styles/_project/_typography.scss */
 .h4, h4 {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 52px;
   line-height: 140%;
   margin: 0px;
