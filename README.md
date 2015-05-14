@@ -12,7 +12,7 @@ Built on [Fabricator](http://fbrctr.github.io/)
 
 Using [Bourbon](http://bourbon.io/)
 
-CSS Structure Insmdpired from [DoCSSa](http://docssa.info/)
+CSS Structure Inspired from [DoCSSa](http://docssa.info/)
 
 ## License
 
