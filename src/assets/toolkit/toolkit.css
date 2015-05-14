@@ -450,6 +450,18 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* line 1, styles/_base/_atoms.scss */
+button {
+  height: 40px;
+  background: #d8d8d8;
+  outline: none;
+  border: none;
+  padding: 0px 40px;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #333;
+}
+
 /* line 4, styles/_base/bourbon/grid/_box-sizing.scss */
 html {
   box-sizing: border-box;
