@@ -5,7 +5,6 @@
 
 $default-borderRadius: 4;
 
-
 // Colors
 // ==========================================================================
 
@@ -32,13 +31,10 @@ $color-text--dark:          darken($color-text , 20);
 $color-text--link:          $color-text;
 $color-text--link--hover:   darken($color-text--link, 20);
 
-
 // Font usage for normal, display, script, and monospace stacks
 $font-slab       : "Roboto Slab" , "Helvetica Neue", Helvetica, serif, sans-serif;
 $font-sans       : "Roboto" , "Helvetica Neue", Helvetica, serif, sans-serif;
 $font-serif      : serif, sans-serif;
-
-
 
 // Type Settings
 // ==========================================================================
@@ -62,7 +58,3 @@ $unit-h3: 24;
 $unit-h4: $unit-p;
 $unit-h5: $unit-p;
 $unit-h6: $unit-p;
-
-
-
-
