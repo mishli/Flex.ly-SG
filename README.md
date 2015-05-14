@@ -6,9 +6,9 @@
 
 ## Credits
 
-Created by [Doron Mishli](http://twitter.com/mish_li).
+Created by [Doron Mishli](http://twitter.com/mish_li)
 
-Built on [Fabricator](http://fbrctr.github.io/).
+Built on [Fabricator](http://fbrctr.github.io/)
 
 Using [Bourbon](http://bourbon.io/)
 
