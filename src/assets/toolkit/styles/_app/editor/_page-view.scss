@@ -1,0 +1,123 @@
+.page-view {
+
+		position: fixed;
+		// width: 100px;
+		bottom: 0px;
+		background: $color-default-darker;
+
+		nav {
+
+				ul {
+					-webkit-font-smoothing:antialiased;
+					text-shadow:0 1px 0 #FFF;
+
+				    list-style: none;
+				    margin: 0;
+				    padding: 0;
+				    width: 100%;
+
+
+				    	li {
+				    		float: left;
+						    margin: 0;
+						    padding: 20px;
+						    position: relative;
+						    min-width: 25%;
+
+						    	&:hover a {
+						    		background: #ccc;
+						    	}
+
+
+						    	a, a:visited, a:hover {
+						    		background: $color-default-darker;
+								    color: $color-default-light;
+								    text-transform: uppercase;
+								    display: block;
+									font-family: $font-sans;
+									font-size: 16px;
+								    padding: 0 25px;
+								    text-align: center;
+								    text-decoration: none;
+								    -webkit-transition: all .25s ease;
+								       -moz-transition: all .25s ease;
+								        -ms-transition: all .25s ease;
+								         -o-transition: all .25s ease;
+								            transition: all .25s ease;
+
+
+									&.dropdown:after {
+										content: ' ▼';
+									}
+
+									&.dropdown:hover:after {
+										content:' ▲';
+									}
+						    	}
+
+						    	ul {
+						    		float: left;
+								    left: 0;
+								    opacity: 0;
+								    position: absolute;
+								    bottom: 100%;
+  									top: auto;
+								    visibility: hidden;
+								    z-index: 1;
+								    -webkit-transition: all .25s ease;
+								       -moz-transition: all .25s ease;
+								        -ms-transition: all .25s ease;
+								         -o-transition: all .25s ease;
+								            transition: all .25s ease;
+
+								         li {
+										    float: none;
+										    width: 100%;
+										    background: $color-default-darker;
+								    		color: $color-default-light;
+
+								    			a:visited, a:hover, a {
+													background: $color-default-darker;
+													color: $color-default-light;
+												}
+										}
+
+
+						    	}
+
+						    	&:hover ul {
+								    opacity: 1;
+								    bottom: 50px;
+								    visibility: visible;
+
+								}
+
+				    	}
+
+
+				}
+
+
+
+		}
+
+// .cf:after, .cf:before {
+// 	    content:"";
+// 	    display:table;
+// 	}
+// 	.cf:after {
+// 	    clear:both;
+// 	}
+// 	.cf {
+// 	    zoom: 1;
+// 	}
+
+
+
+
+
+
+
+}
+
+

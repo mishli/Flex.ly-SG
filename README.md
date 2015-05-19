@@ -2,17 +2,9 @@
 
 # Flex.ly Front-end Style Guide
 
-#### [View Project](http://front.flex.ly)
-
 ## Credits
 
-Created by [Doron Mishli](http://twitter.com/mish_li)
-
-Built on [Fabricator](http://fbrctr.github.io/)
-
-Using [Bourbon](http://bourbon.io/)
-
-CSS Structure Inspired from [DoCSSa](http://docssa.info/)
+Created by [Doron Mishli](http://twitter.com/mish_li), built on [Fabricator](http://fbrctr.github.io/) using [Bourbon](http://bourbon.io/) for sass mixins and grid.
 
 ## License
 

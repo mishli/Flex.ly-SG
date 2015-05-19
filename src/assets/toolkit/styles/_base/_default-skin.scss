@@ -5,7 +5,6 @@
 
 $default-borderRadius: 4;
 
-
 // Colors
 // ==========================================================================
 
@@ -13,10 +12,12 @@ $color-default-light:       #fff;
 $color-default-dark:        #333;
 $color-default-darker:      #000;
 
-$color-main:                #dddddd;
-$color-main-light:          lighten($color-main , 20);
-$color-main-lighter:        lighten($color-main , 40);
-$color-main-darker:        darken($color-main , 5);
+$color-main:                #2596DA;
+$color-main-light:          #3BA1DE;
+$color-main-lighter:        #3EAAEB;
+
+$color-button:              #d8d8d8;
+$color-button-hover:       lighten($color-button , 1);
 
 $color-secondary:           #ee746f;
 
@@ -27,19 +28,18 @@ $color-alt-light:           #f8f5ec;
 $color-alt2:                #637c84;
 
 $color-white:               #fff;
-$color-text:                #333;
+$color-text:                #2e2e2e;
 $color-text--light:         lighten($color-text , 20);
 $color-text--dark:          darken($color-text , 20);
 $color-text--link:          $color-text;
 $color-text--link--hover:   darken($color-text--link, 20);
 
+$editor-bg: #e5e5e5;
 
 // Font usage for normal, display, script, and monospace stacks
 $font-slab       : "Roboto Slab" , "Helvetica Neue", Helvetica, serif, sans-serif;
-$font-sans       : "Helvetica Neue", Helvetica, serif, sans-serif;
+$font-sans       : "Roboto" , "Helvetica Neue", Helvetica, serif, sans-serif;
 $font-serif      : serif, sans-serif;
-
-
 
 // Type Settings
 // ==========================================================================
@@ -52,7 +52,7 @@ $unit--baseline  : $unit * 4;
 //base font
 $bf: 16;
 
-//Typography
+// type parameters
 $unit-p         : 18;
 $unit-p--medium : 22;
 $unit-p--large  : 24;
@@ -64,6 +64,65 @@ $unit-h4: $unit-p;
 $unit-h5: $unit-p;
 $unit-h6: $unit-p;
 
+//Typography
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400);
+@import url(http://fonts.googleapis.com/css?family=Roboto:300);
 
+a {
+    color: $color-text--link;
+    text-decoration: none;
+}
 
+h1 {
+    font-family: $font-slab;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 140%;
+    color: $color-text;
+    margin: 0px;
+}
+
+h2 {
+    font-size: 26px;
+    font-family: $font-sans;
+    font-weight: 300;
+    color: $color-text;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 22px;
+    color: $color-text;
+    margin: 20px 0px 30px 0px;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 140%;
+    margin: 0px;
+    color: $color-main;
+}
+
+h5 {
+    font-family: $font-sans;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 140%;
+    margin: 2px 0px 0px 0px;
+    color: $color-text;
+}
+
+p {
+    font-weight: 300;
+    font-size: 18px;
+    color: $color-text;
+    @inckude font-size($unit-p)
+}
+
+cite {
+    border: none;
+}
+
+// atoms
 

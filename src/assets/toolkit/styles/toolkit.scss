@@ -13,12 +13,16 @@
 // reusable components
 @import '_components/__components';
 
-/*! SPECIFICS */
-// declarations specific to the project, organized according to the items/sections represented
-//@import '_molecules/__molecules';
+/*! APP */
+// declarations specific to the aweb pp
+@import '_app/__app';
+
+/*! Skins */
+// Skins files
+@import '_skins/__skins';
 
 /*! PROJRCT */
-// declarations specific to the project, organized according to the items/sections represented
+// Styles specific to project
 @import '_project/__project';
 
 

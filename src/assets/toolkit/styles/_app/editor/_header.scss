@@ -1,0 +1,74 @@
+header {
+	width: 100%;
+	@include outer-container;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 60px;
+	background: $editor-bg;
+	z-index: 9999;
+	padding: 10px 20px;
+
+
+		.logo {
+
+			@include span-columns(1);
+			//float: left;
+			background: $color-secondary url('') no-repeat;
+			width: 40px;
+			height: 22px;
+			@include vertical-align;
+
+		}
+
+		.responsive-check {
+
+			@include span-columns(1);
+			@include shift(4);
+			// width: 100px;
+			// margin: 0 auto;
+			text-align: center;
+			@include vertical-align;
+
+		}
+
+		.actions {
+
+		@include span-columns(4);
+		@include omega();
+		float: right;
+		@include vertical-align;
+
+			// @include respond-max(1000px) {
+			// 	@include span-columns(5);
+			// }
+
+
+			.menu {
+
+				float: right;
+				margin-right: 40px;
+
+				ul {
+
+					li {
+						display: inline;
+						list-style-type: none;
+					}
+
+				}
+			}
+
+			button {
+				float: right;
+				margin-top: 5px;
+
+
+			}
+
+		}
+
+}
+
+
+

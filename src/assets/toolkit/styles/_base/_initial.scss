@@ -1,0 +1,34 @@
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+// buttins
+
+
+.btn {
+    height: 40px;
+    background: $color-button;
+    outline: none;
+    border: none;
+    padding: 0px 40px;
+    border-radius: 8px;
+    font-size: 18px;
+    color: $color-default-dark;
+    text-transform: uppercase;
+
+      &:hover {
+        background: $color-button-hover;
+      }
+
+      &.outline {
+        border: 1px solid $color-default-dark;
+        background: transparent;
+
+          &:hover {
+            background: $color-button-hover;
+          }
+      }
+}
+
